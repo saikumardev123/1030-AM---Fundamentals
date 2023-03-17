@@ -22,7 +22,7 @@ Environment Set up:
 
 1. Visual Studio Code 
 
-https://code.visualstudio.com/ 
+https://code.visualstudio.com/
 
 
 <html>
@@ -55,7 +55,9 @@ a tree (Data structure) called DOM Tree.
 DOM(Document Object Model):  It is a data structure tree that 
 represent each tag of html page in the form of objects. 
 
-Each tag is represented as an object. 
+Each tag is represented as an object.
+
+
 
 
 

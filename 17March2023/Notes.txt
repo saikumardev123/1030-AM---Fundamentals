@@ -1,0 +1,169 @@
+HTML Attribute:
+
+An HTML Attribute is a key-value pair that enhances the capabilities of 
+a html element. 
+
+ex: 
+
+ <input type="password">
+
+ <input size="40" type="password" placeholder="enter your password here">
+
+
+ from the above size , password, placeholder are the attributes that are 
+ enhancing the capabilities of input element. 
+
+
+We can categorize the attributes into 3 types. 
+
+1. element specific attributes : These attributes can be applied only to that 
+specific element. 
+
+ex:  img
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <img alt="this image is n/a" width="100px" height="60px"
+        src="https://rukminim1.flixcart.com/image/312/312/ks0onm80/monitor/8/k/l/ha240y-um-hw0si-a01-acer-original-imag5zjzfcfgzydm.jpeg?q=70">
+</body>
+
+</html>
+
+2. global attributes:
+
+These attributes can be applied to any html element.
+
+
+https://www.w3schools.com/tags/ref_standardattributes.asp
+
+ex: style
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1 style="text-align: center; color:green">This is some header</h1>
+    <h2 style="text-align: right; font-size: 100px">This is another header</h2>
+    <p style="color:red">This is some paragraph!</p>
+</body>
+
+</html>
+
+
+class:
+
+<html>
+
+<head>
+    <style>
+        .lightTheme {
+            background-color: grey;
+            color: khaki
+        }
+
+        .darkTheme {
+            background-color: black;
+            color: grey
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="lightTheme">This is header 1</h1>
+
+    <h2 class="darkTheme">This is header 2</h2>
+
+    <p class="darkTheme">Hello</p>
+
+</body>
+
+</html>
+
+3. event attributes : 
+
+These attributes can be applied to any html element. 
+
+All the event attributes starts with 'on' prefix
+
+The event attributes allow the html UI to interact with javascript. these 
+attibutes acts as the bridge between js and html.
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" placeholder="enter otp">
+    <button onclick="confirm()">Confirm</button>
+
+    <script>
+
+        function confirm() {
+            alert("I am called");
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Disable the user from pasting the content on a text field. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" oncopy="onCopyFn()" onpaste="return false" placeholder="enter account number">
+
+    <script>
+
+        function onCopyFn() {
+            alert("copying is disabled")
+            return false
+        }
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+PS: Disable the user from right clicking on a page.
+
+event: oncontextmenu 
+
+List of events:
+
+https://www.w3schools.com/tags/ref_eventattributes.asp
+
+
+
+
+
+
