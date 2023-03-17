@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+    <!-- Title, favicon.......-->
+
+    <title>Welcome to DigitalLync Technologies</title>
+
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+
+</head>
+
+<body>
+    <!-- Content to be displayed on the UI-->
+    <input type="text" id="username" placeholder="username here"> <span style='color:red' id="message"></span>
+    <br><br>
+    <input type="password" id="password" placeholder="password here">
+    <button onclick="login()">Login</button>
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            if (username.includes(" ")) {
+                document.getElementById("message").innerHTML = "username cannot have space";
+            }
+        }
+    </script>
+</body>
+
+</html>

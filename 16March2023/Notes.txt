@@ -1,0 +1,69 @@
+
+
+
+HTML:
+
+HyperText Mark up language is used for describing static web pages. 
+
+Mark Up language: 
+
+Mark up language contains a list of tags to represent data / ui. 
+
+ex: HTML, XML
+
+Tag: A tag is a keyword that is enclosed using angular brackets. 
+
+ex: <html>, <head>, <body>....
+
+HTML provides a set of tags to describe web pages.
+
+
+Environment Set up:
+
+1. Visual Studio Code 
+
+https://code.visualstudio.com/ 
+
+
+<html>
+
+<head>
+
+    <!-- Title, favicon.......-->
+
+    <title>Welcome to DigitalLync Technologies</title>
+
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+
+</head>
+
+<body>
+    <!-- Content to be displayed on the UI-->
+    <input type="text" id="username" placeholder="username here"> <br><br>
+    <input type="password" id="password" placeholder="password here">
+
+    <p>This is a paragraph!!</p>
+</body>
+
+</html>
+
+How browsers execute / render web pages. 
+
+When we give the web page to a browser, browser creates 
+a tree (Data structure) called DOM Tree. 
+
+DOM(Document Object Model):  It is a data structure tree that 
+represent each tag of html page in the form of objects. 
+
+Each tag is represented as an object. 
+
+
+
+
+
+
+
+
+
+
+
