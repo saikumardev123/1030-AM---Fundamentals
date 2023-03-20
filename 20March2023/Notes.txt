@@ -1,0 +1,67 @@
+HTML Editors:
+
+We can use any editor for writing HTML Code.
+
+1. Notepad 
+2. Notepad++
+3. Sublime 
+4. Atom 
+5. Brackets 
+
+
+6. Visual Studio Code (Recommended):
+
+* Product of Microsoft 
+
+* Open Source (Free license)
+
+* lot of features 
+
+
+Reference links for Git (getting some additional knowledge):
+
+https://www.youtube.com/watch?v=ulQA5tjJark
+
+
+HTML Document Structure:
+
+<html>
+
+<head>
+    <!--
+        
+        title
+        favicon
+        meta
+        styles - internal style sheets
+        javascript - <script>
+        link- other css files
+    -->
+    <!-- <meta http-equiv="refresh" content="1"> -->
+
+    <style>
+        h1 {
+            color: red
+        }
+    </style>
+
+    <!-- <script>
+
+        alert("Good Morning!");
+
+    </script> -->
+
+</head>
+
+<body>
+    <h1>I am a header!</h1>
+    <script>
+
+        alert("body");
+
+    </script>
+
+</body>
+
+</html>
+
