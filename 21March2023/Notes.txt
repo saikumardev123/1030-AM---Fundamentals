@@ -1,0 +1,167 @@
+HTML Headings:
+
+HTML provides the headings from h1 to h6. 
+
+The difference between h1 to h6 is on font-size. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+</body>
+
+</html>
+
+
+HTML Paragraphs:
+
+tag: <p> 
+
+At any point of time, if we want to add some textual information, then use <p>
+tag. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p style="font-family: cursive"> One-stop Shopping Destination. E-commerce is revolutionizing the way we all shop in
+        India. An e-commerce that
+        allows you to buy and sell tangible goods, digital products or services online.</p>
+</body>
+
+</html>
+
+
+HTML Styles:
+
+
+using style, class attributes we can provide some css to the 
+html elements. 
+
+
+<html>
+
+<head>
+    <style>
+        .theme1 {
+            color: grey;
+            background-color: black;
+            text-align: center
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center; color:green">Courses Info</h1>
+
+    <h1 class="theme1">Projects Info</h1>
+
+
+</body>
+
+</html>
+
+
+HTML Comments:
+
+Sometimes we want the other developers to understand our code, hence 
+the code related comments are required. 
+
+
+syntax:
+
+ <!--  
+ 
+       comment data goes over here.
+ 
+       -->
+
+
+Comments will be ignored by the browsers while rendering the content 
+on the UI.
+
+HTML Blocks:
+
+HTML provides 2 types of elements.
+
+1. block level element :
+
+it always starts in the new line and occupies the maximum width in the 
+page. 
+
+2. inline element: 
+
+it always starts in the same line and occupies the content level 
+width.
+
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+
+    <!-- inline-->
+    <input placeholder="username here">
+    <input type="password" placeholder="password here">
+    <a href="home">Home</a>
+    <span>This is span text</span>
+
+    <!-- block level-->
+    <h1>This is header 1</h1>
+    <h1>This is header 2</h1>
+    <p>This is a paragraph!</p>
+
+</body>
+
+</html>
+
+https://www.w3schools.com/html/html_blocks.asp
+
+
+id: id is used to identify a HTML element. 
+
+ids must be unique and can be used with any html element because id is 
+a global attribute. 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <input type="text" id="username" placeholder="username">
+
+    <input type="password" id="password">
+
+</body>
+
+</html>
+
+HTML Tables:
+
+
+
+
+
