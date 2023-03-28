@@ -1,0 +1,154 @@
+CSS: Cascading Style Sheets. 
+
+Using CSS, We can apply some styles to the HTML web pages. 
+
+CSS Selectors:
+
+There are 2 types of selectors. 
+
+1. core selectors
+2. advanced selectors
+
+core selectors :
+
+*  element selector 
+
+syntax:
+
+  element_name{
+      property: value
+  }
+
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-family: cursive
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>This is a header- 1</h1>
+
+    <h1>This is another header -2</h1>
+
+    <h1>Another header</h1>
+
+    
+
+</body>
+
+</html>
+
+
+code:
+
+<html>
+
+<head>
+
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+            font-family: cursive
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>This is a header- 1</h1>
+
+    <h1>This is another header -2</h1>
+
+    <h1>Another header</h1>
+
+    <h2>Header 2</h2>
+
+    <h2>Header 3</h2>
+
+</body>
+
+</html>
+
+class selector:
+
+syntax: 
+
+.class_name{
+    property: value
+}
+<html>
+
+<head>
+
+    <style>
+        .lightTheme {
+            color: lightgrey;
+            background-color: black
+        }
+
+        .center {
+            text-align: center
+        }
+
+        .cursive {
+            font-family: cursive
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="lightTheme center cursive">This is a header- 1</h1>
+    <h1>This is another header -2</h1>
+    <h1>Another header</h1>
+    <h2>Header 2</h2>
+
+    <h2 class="lightTheme">Header 3</h2>
+
+</body>
+
+</html>
+
+
+id selector:
+
+<html>
+
+<head>
+
+    <style>
+        #greetings {
+            color: green;
+            text-align: center
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="greetings">Good Morning!</h1>
+
+</body>
+
+</html>
+
+Types of CSS:
+
+1. inline 
+2. internal 
+3. external 
+
+
+
