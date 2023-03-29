@@ -1,0 +1,118 @@
+Inserting CSS into HTML(Inline, Internal,External):
+
+Inline: works with a single html element and we use style attribute to 
+apply inline style sheet. 
+
+Internal: works with in a file and we use <style> tag in head section 
+to add the internal style sheet. 
+
+External: works with multiple files and we create a seperate file for 
+css and link them using <link> tag wherever required. 
+
+
+Inline and Internal Example:
+
+<html>
+
+<head>
+
+    <!-- internal style sheet-->
+    <style>
+        h2 {
+            text-align: right;
+            color: green
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- inline-->
+    <h1 style="text-align: center;background-color: green">Hello!</h1>
+    <h2>Header 2</h2>
+    <h2>Header 3</h2>
+    <h2>Header 4</h2>
+
+
+</body>
+
+</html>
+
+
+External:
+
+index.css:
+
+h1 {
+    font-size: 40px;
+    font-family: cursive;
+    text-align: center;
+    background-color: black;
+    color: darkgray
+}
+
+
+page1.html:
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="core.css">
+</head>
+
+<body>
+    <h1>Digital Lync Technologies</h1>
+
+    <h2> We are in page 1</h2>
+
+    <input type="text" placeholder="enter username">
+</body>
+
+</html>
+
+page2.html:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Digital Lync Technologies</h1>
+
+    <h2> We are in page 2</h2>
+</body>
+
+</html>
+
+page3.html:
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <h1>Digital Lync Technologies</h1>
+
+    <h2> We are in page 3</h2>
+</body>
+
+</html>
+
+Problem Statement: 
+
+Create a web page that involves inine, internal and external style sheets. 
+
+
+Problem Statement: 
+
+1. add bg color to columns 
+2. color the text of one cell in each row 
+3. align the tds to center 
+4. on hover of tr, activate a background color (explore)
