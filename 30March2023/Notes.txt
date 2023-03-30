@@ -1,0 +1,302 @@
+Colors:
+
+Every web site needs a different design and colors help the web site to convey 
+the design of the website to the end users. 
+
+property -> color: value. 
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            /* color: teal */
+            /* color: rgb(2, 128, 121) */
+            /* color: rgba(2, 128, 121, 0.8) */
+            color: #00b3b3
+        }
+    </style>
+</head>
+<body>
+    <h1>Digital Lync Technolgies</h1>
+</body>
+</html>
+
+
+backgrounds: 
+
+Some times we need some brackgrounds to the html elements / page then we 
+can use background property.
+
+
+<html>
+
+<head>
+
+    <style>
+        body {
+            /* background-color: red */
+
+            /* background-image: url("prime.jpeg");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed; */
+            background: url("prime.jpeg") no-repeat right top fixed;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+    <h1>Amazon</h1>
+</body>
+
+</html>
+
+
+Border:
+
+A border is used to highlight some content / ui element. 
+
+We have different styles of borders in CSS. 
+
