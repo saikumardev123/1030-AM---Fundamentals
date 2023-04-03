@@ -1,0 +1,108 @@
+Outline:
+
+Outline is used to add an extra line to the border. when we want to highlight 
+the border, we use Outline, best example for outline -> thumbnails
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            border-style: solid;
+            border-color: red;
+            border-width: 5px;
+            margin: 300px;
+            padding-left: 30px;
+            /* outline-style: solid;
+            outline-color: green;
+            outline-width: 15px; */
+            outline: solid green 15px;
+            outline-offset: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>April Sale is Live: Get the best deals on summer wear</h1>
+
+</body>
+
+</html>
+
+
+Fonts: 
+
+We can use different font-families to the web pages based on the requirement. 
+
+font-family property helps us in defining the different font-families. 
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            border-style: solid;
+            border-color: red;
+            border-width: 5px;
+            margin: 150px;
+            padding-left: 30px;
+            /* outline-style: solid;
+            outline-color: green;
+            outline-width: 15px; */
+            outline: solid green 15px;
+            outline-offset: 10px;
+            font-size: 45px;
+            font-family: cursive
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>April Sale is Live: Get the best deals on summer wear</h1>
+
+</body>
+
+</html>
+
+Links:
+
+
+<html>
+
+<head>
+
+    <style>
+        a {
+            text-decoration: none;
+            color: red;
+            border: solid red 1px;
+            padding: 4px;
+        }
+
+        a:hover {
+            background-color: red;
+            color: whitesmoke
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="index.html">Home</a>
+
+    <a href="xyz.html">Login</a>
+
+
+</body>
+
+</html>
+
+CSS Lists: 
+
