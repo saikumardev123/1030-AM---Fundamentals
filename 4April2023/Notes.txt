@@ -1,0 +1,92 @@
+Tables:
+
+<html>
+
+<head>
+
+    <style>
+        th,
+        td {
+            border: solid 1px grey;
+            text-align: center
+        }
+
+        th {
+            background-color: yellow
+        }
+
+        table {
+            border: solid 1px grey;
+            width: 100%
+        }
+
+        tr:hover {
+            background-color: blue;
+            color: white
+        }
+
+        tr:nth-child(odd) {
+            background-color: aquamarine
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <table>
+
+        <thead>
+
+            <th>Col 1</th>
+            <th>Col 2</th>
+            <th>Col 3</th>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>cell 3</td>
+            </tr>
+            <tr>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>cell 3</td>
+            </tr>
+            <tr>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>cell 3</td>
+            </tr>
+            <tr>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>cell 3</td>
+            </tr>
+            <tr>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>cell 3</td>
+            </tr>
+            <tr>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>cell 3</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
+
+
+Div tag:
+
+
+
