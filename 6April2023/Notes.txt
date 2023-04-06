@@ -1,0 +1,135 @@
+Media Queries: media queries are used for responsive web design
+
+syntax:
+
+@media not|only mediatype and (expressions) {
+CSS-Code;
+}
+
+
+
+Different mediatypes:
+
+all
+Suitable for all devices.
+
+braille
+Intended for braille tactile feedback devices.
+
+embossed
+Intended for paged braille printers.
+
+handheld
+Intended for handheld devices (typically small screen, limited bandwidth).
+
+print
+Intended for paged material and for documents viewed on screen in print preview mode. Please consult the section on
+paged media for information about formatting issues that are specific to paged media.
+
+projection
+Intended for projected presentations, for example projectors. Please consult the section on paged media for information
+about formatting issues that are specific to paged media.
+
+screen
+Intended primarily for color computer screens.
+
+speech
+Intended for speech synthesizers. Note: CSS2 had a similar media type called 'aural' for this purpose. See the appendix
+on aural style sheets for details.
+
+tty
+Intended for media using a fixed-pitch character grid (such as teletypes, terminals, or portable devices with limited
+display capabilities). Authors should not use pixel units with the "tty" media type.
+
+tv
+Intended for television-type devices (low resolution, color, limited-scrollability screens, sound available).
+
+
+
+
+Code:
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <style>
+        body {
+            color: orange;
+            background-color: grey
+        }
+
+        @media all and (max-width:500px) {
+            body {
+                color: green;
+                background-color: red
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> This is some header</h1>
+    <h2>This is another header</h2>
+
+</body>
+
+</html>
+
+
+example:
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <style>
+        /* body {
+            color: orange;
+            background-color: grey
+        } */
+
+        img {
+            width: 600px;
+        }
+        @media all and (max-width:500px) {
+            img {
+                width: 300px;
+            }
+
+            iframe {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <img
+        src="https://rukminim1.flixcart.com/image/416/416/xif0q/monitor/f/e/8/ls27r354fhwxxl-full-hd-27-ls27r354fhwxxl-samsung-original-imagmt5zezuywyrb.jpeg?q=70">
+
+    <br><br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y116JJ12c74" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create input fields that fits in all devices where based on small 
+devices the input fields size should be adjusted. 
+
+initial size: 40 (input) 
+
+based on devices make it 20. 
+
+
