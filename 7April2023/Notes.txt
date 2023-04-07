@@ -1,0 +1,133 @@
+Rounded Corner:
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            border: 5px solid green;
+            margin: 500px;
+            padding-left: 40px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-radius: 40px;
+            background-color: grey;
+            color: whitesmoke;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Thank God! Its Friday.</h1>
+</body>
+
+</html>
+
+
+Border Images:
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            border: 5px solid green;
+            margin: 500px;
+            padding-left: 40px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            /* border: 1px solid green; */
+            border-image: url("https://rukminim1.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70") 60 round;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Thank God! Its Friday.</h1>
+</body>
+
+</html>
+
+Multi backgrounds:
+
+<html>
+
+<head>
+
+    <style>
+        div {
+            background-image: url("https://rukminim1.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70"), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgZ3RMKmWlmW2LqYFOxf2W8-39GVTa-1RsgMZXIv5WQg&usqp=CAU&ec=48665698");
+            background-repeat: no-repeat, no-repeat;
+            background-position: top center, top right;
+            background-size: 40px 40px, 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create 3 background images inside a div. 
+
+1 images on the left 
+
+2 image center 
+
+3 image should be occuping the complete width. 
+
+
+
+
+
+PS: 
+
+Create a background image and have a login form in the center of the page. 
+
+<html>
+
+<head>
+
+    <style>
+        body {
+            background: url("https://www.shutterstock.com/image-vector/back-school-set-different-signs-260nw-1453000499.jpg") no-repeat;
+
+            background-size: 100% 100%;
+        }
+
+        #form {
+
+            margin-left: 600px;
+            margin-top: 350px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="form">
+        <input type="text" placeholder="enter username"> <br><br>
+        <input type="text" placeholder="enter password"><br><br>
+        <button>Login</button>
+    </form>
+
+</body>
+
+</html>
