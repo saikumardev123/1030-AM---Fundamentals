@@ -1,0 +1,93 @@
+
+Introduction to Javascript:
+
+Javascript:
+
+JS initally was a scripting language used to develop dynamic web applications and now considered as  programming laguage to work with multiple technologies. 
+
+JS developed by brendan to support a browser called netscape navigator.
+
+Different areas where JS can be used:
+
+1. web application developement (client side and server side). 
+
+2. IOT - Internet of Things - Home Automation
+
+3. Block Chain 
+
+4. Games 
+
+5. AR / VR 
+
+6. AI / DataScience
+
+
+Evironment Set up:
+
+1. VSCode 
+2. Browser 
+
+Scripting Languages and their usage:
+
+1. Scripting Languages like javascript provide more functionality with 
+less code. 
+
+2. Scripting Languages does not have a compiler, instead the code will be 
+interpreted.  The runtime engine does the interpretation of the code on the fly. 
+
+
+History of JavaScript:
+
+ 1. It was developed to suport NetScape Navigator browser in 1990's . JS was 
+ developed in 10 days. 
+
+ 2. It was named as LiveScript and then got standardized with ECMA (Eurpoean Computers Manufacturers association).
+
+ 3. After LiveScript, its changed to javascript.
+
+ Variables:
+
+* A variable is an identifier which is used to identify some data.
+
+or 
+
+* A variable is an identifier to store the data.
+
+JS provides variables to capture the data and use it for data processing.
+
+
+syntax:
+
+var var_name = value; 
+
+var age = 21;
+
+Declaration:  
+
+
+ var var_name; 
+
+ var age;
+
+
+Initilization:
+
+ age = 21;
+
+
+ variable creation =   Declaration +  Initilization;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

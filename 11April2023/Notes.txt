@@ -1,0 +1,103 @@
+Types of Variables: 
+
+JS provides 2 types of variables:
+1. local : if we create a variable inside a function, then it is known as Local 
+Variable.
+
+        function f1() {
+            var a = 100; //  local variables
+            var b = 200; //  local variables
+            console.log(a);
+            console.log(b);
+        }
+        f1();
+        console.log(a); // error
+
+    The scope of local variables is with in the function which means we can 
+    access the local variables with in the function only.
+
+2. global:
+
+  A variable that is created outside of a function is known as global variable. 
+
+  The global variable can be accessible anywhere in the application.
+
+
+   var a = 300; // global variable
+        var b = 900; // global variable
+        function f1() {
+            var a = 100; //  local variables
+            var b = 200; //  local variables
+            console.log(a);
+            console.log(b);
+        }
+        f1();
+        console.log(a); // 300 
+        console.log(b); // 900
+
+
+Problem Statement: 
+
+Implement login system using username and password. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" id="username" value="" placeholder="username"> <br><br>
+    <input type="text" id="password" value="" placeholder="password"><br><br>
+    <button onclick="login()">Login</button>
+    <script>
+        function login() {
+            var usernameInput = document.getElementById("username").value; // local
+            var passwordInput = document.getElementById("password").value; // local
+            if (usernameInput == "sai" && passwordInput == "kumar") {
+                alert("login success");
+            }
+            else {
+                alert("login failure");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Implement likes count feature using javascript.
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <i onclick="incrementLikes()" class="fa fa-thumbs-up" style="font-size:36px; color:grey"></i>
+    <span id="counter">0</span>
+
+    <script>
+        var likes = 0;
+        function incrementLikes() {
+
+            likes = likes + 1; // 1 +1 =2
+            document.getElementById("counter").innerHTML = likes;
+
+        }
+    </script>
+</body>
+
+</html>
+
+
+
