@@ -1,0 +1,103 @@
+Variable Hoisting: 
+
+It is a default process followed by Runtime engine before 
+executing the code. 
+
+Variable Hoisting is the process where all the variables are 
+declared at the top before the execution. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        console.log(a); // undefined / 10
+        console.log(b); // undefined / 20
+        var a = 10;
+        var b = 20;
+
+        function f1() {
+            console.log(a);
+            console.log(b);
+            var a = 90;
+            var b = 200;
+        }
+        f1();
+
+        /*
+        After Variable Hoisting:
+            var a,b;
+
+         console.log(a); //undefined
+        console.log(b); // undefined
+         a = 10;
+         b = 20;
+
+        function f1() {
+            var a,b;
+            console.log(a); // undefined
+            console.log(b); // undefined
+             a = 90;
+             b = 200;
+        }
+        f1();
+
+
+        */
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+code snippet:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        a = 10;
+        b = 20;
+        function f1() {
+            console.log(a); //
+            console.log(b); //
+        }
+        f1();
+
+
+        /*
+        After Variable Hoisting:
+
+        var a,b;
+         a = 10;
+         b = 20;
+
+        function f1() {
+            console.log(a); // 10
+            console.log(b); // 20
+        }
+        f1();
+
+
+        */
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+JS Visualizer: https://ui.dev/
