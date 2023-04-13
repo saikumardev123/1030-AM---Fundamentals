@@ -1,0 +1,95 @@
+Data types:
+
+JS is considered as weakly data typed lanugage.
+Datatype represents the type of data stored in a variable. 
+
+JS categorize the data types into 2 types. 
+
+1. Primitive DataTypes : number, boolean , string
+2. Non Primitive DataTypes : arrays and objects 
+
+number: 
+
+  var age = 21;
+        console.log(age);
+        console.log(typeof age);
+
+        var rating = 2.13;
+        console.log(rating);
+        console.log(typeof rating);
+
+boolean:  true / false 
+
+    var isDone = false;
+        console.log(isDone);
+        console.log(typeof isDone);
+        isDone = 1;
+        console.log(typeof isDone); //?
+
+
+String: 
+A collection of characters is known as String.
+
+syntax: 
+var str = " "; 
+or 
+var str =' ';
+
+
+//var username = "kiran";
+        var username = 'kiran';
+        console.log(username);
+        console.log(typeof username);
+
+
+In JS, String are immutable (cannot be modified)
+
+  var firstname = "digital";
+        var lastname = "lync";
+        firstname.concat(lastname); // "digitallync"
+        console.log(firstname);
+
+        firstname = firstname.concat(lastname);
+        console.log(firstname);
+
+JS provides lot of methods w.r.t strings.
+
+
+Problem Statement: 
+
+ ProgrammerINit
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input size="50" type=" text" id="email" placeholder="enter your email here"><br><br>
+    <button onclick="next()">Next</button>
+    <script>
+        function next() {
+            var email = document.getElementById("email").value;
+            email = email.trim();
+            email = email.toLowerCase();
+            // Print email on the console
+            console.log(email);
+            if (email.includes("@gmail.com")) {
+
+            }
+            else {
+                email = email.concat("@gmail.com");
+            }
+            console.log(email);
+            document.getElementById("email").value = email;
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
