@@ -1,0 +1,104 @@
+Non-Primitive Datatypes: 
+
+1. Arrays :
+
+   An array is a linear data structure which can store the data in the sequential order. 
+
+   In any Programming language, Arrays can store only similar type of data, but in JS, arrays can store 
+   different types of data. 
+
+   syntax:
+   var arr= [1,2,3,4,5];
+   var data=[1, true,"hello"]
+
+   index starts from 0.
+
+    var arr = [1, 2, 3, 45, 6, 65, 2, true, false, "hello", "how"];
+        console.log(arr);
+        console.log(arr[0]);
+        console.log(arr[10]);
+        console.log(arr[14]); // undefined
+        //arr.push(100);
+        // arr.unshift("Hey", "Hello", "xyzmbdsc");
+        // arr.pop();
+        // arr.shift();
+        // var index = arr.indexOf(65);
+        // arr.splice(index, 1);
+        console.log(arr);
+
+2. Objects: 
+Any physical entity that has properties and behaviour(action) is considered 
+as an object. 
+
+Examples: Bank Customer, Employee, Laptop... 
+
+Bank Customer: 
+
+properties: name, accountNumber, contact number, address, balance, typeofaccount
+
+behaviour(action): withdraw, deposit, fundtransfer..
+
+In JS, if we want to represent any realtime entity to store their information, we use javascript objects. 
+
+syntax: 
+
+   var obj_name = {
+       key: value, 
+       key: value,
+       .
+       .
+   }
+   key is a String and should be unique 
+   value can be of any data type and need not to be unique. 
+
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var employee = {
+            name: "kiran",
+            address: {
+                hno: "9792/1",
+                city: "Hyderabad",
+                state: "Telangana"
+
+            },
+            eid: 101,
+            langauges: ["telugu", "hindi", "english"],
+            projects: [
+                {
+                    name: "CRM",
+                    client: "DigitalLync"
+                },
+                {
+                    name: "LMS",
+                    client: "KonaDigital"
+                },
+                {
+                    name: "ECommerce",
+                    client: "DigitalLync"
+                }
+            ]
+        }
+        console.log(employee.address.state);
+        console.log(employee.projects[0].name);
+        console.log(employee);
+        employee.projects[0].manager = "Sundaram";
+        console.log(employee);
+        delete employee.projects[0].manager;
+        console.log(employee);
+
+    </script>
+</body>
+
+</html>
+

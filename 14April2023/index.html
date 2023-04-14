@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var employee = {
+            name: "kiran",
+            address: {
+                hno: "9792/1",
+                city: "Hyderabad",
+                state: "Telangana"
+
+            },
+            eid: 101,
+            langauges: ["telugu", "hindi", "english"],
+            projects: [
+                {
+                    name: "CRM",
+                    client: "DigitalLync"
+                },
+                {
+                    name: "LMS",
+                    client: "KonaDigital"
+                },
+                {
+                    name: "ECommerce",
+                    client: "DigitalLync"
+                }
+            ]
+        }
+        console.log(employee.address.state);
+        console.log(employee.projects[0].name);
+        console.log(employee);
+        employee.projects[0].manager = "Sundaram";
+        console.log(employee);
+        delete employee.projects[0].manager;
+        console.log(employee);
+
+    </script>
+</body>
+
+</html>
