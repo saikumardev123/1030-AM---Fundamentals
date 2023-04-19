@@ -1,0 +1,183 @@
+Operators: 
+
+An Operator is a special keyword / symbol which provides some functionality.
+
+examples: 
+
++,-,++,%,>,< .... 
+
+typeof, instanceof 
+
+Arithmetic Operators:
+
++,-,*,/(quotient),%(remainder), ++(increment by 1), --(decrement by 1)
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var a = 100;
+        a++; // post incremeng 
+        ++a; // pre increment 
+        a--; // post decrement
+        --a; // pre decrement 
+
+        console.log(a);
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var a = 100;
+
+        // a++ = a= a+1;
+        console.log(a++); // post incremeng  ? 100 , a =101
+        console.log(++a); // pre increment  ? 102, a=102
+        console.log(a--); // post decrement ? 102, a=101
+        console.log(--a); // pre decrement  ? 100 , a=100
+        console.log(a); // 100
+
+
+    </script>
+
+</body>
+
+</html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var a = 10, b = "200", c = 30;
+        console.log(a + b + c); // 1020030
+        console.log(b + (a + c)); // 2001030
+        console.log(a + c + b);
+    </script>
+
+</body>
+
+</html>
+
+
+comparision operators: 
+
+>, <, <=,>=, ==, ===, !=, ?: 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        //>, <, <=,>=, ==, ===, !=, ?: 
+
+        var a = 10, b = 20, c = "102", d = "10s", e = "10s";
+        console.log(a < b); // true
+        console.log(a > b);
+        console.log(a == b);
+        console.log(a == c);// ? true / false  == always looks only for content , not for datatype
+        console.log(a === c); // === checks value and datatype.
+        console.log(a >= c);
+        console.log(a >= d); //
+        console.log(d >= e);
+        console.log(a != b);
+        a == c ? console.log(" a is equal to c") : console.log("a is not equal to c");
+    </script>
+
+</body>
+
+</html>
+
+
+typeof operator: 
+
+used to check the datatype of a variable.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var a = 10, b = "200", c = 30;
+
+        console.log(typeof a); // number
+        console.log(typeof b); // string
+
+    </script>
+
+</body>
+
+</html>
+
+instanceof : 
+
+to check if a variable is storing a specific object or not. 
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var a = new Number(10);
+        console.log(a instanceof Number);
+        function Employee() {
+             
+        }
+        var e1 = new Employee();
+        console.log(e1 instanceof Number);
+        console.log(e1 instanceof Employee);
+
+    </script>
+
+</body>
+
+</html>
+
+Problem Statement:
+
+Create a login page with dummy credentials , compare the credentials using the ternary operator. 
+
+?: 
+
+
+
+Logical Operators:
+
+&&, ||, !(NOT)
+
+

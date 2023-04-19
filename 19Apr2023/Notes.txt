@@ -1,0 +1,135 @@
+Control Statements:
+
+There are 3 types of control statements. 
+
+1. Sequential : if, if-else, switch
+
+  if: 
+
+  syntax: 
+
+    if(test-condition){
+        // code
+    }
+
+     var age = 19;
+        if (age >= 18) {
+            console.log("you are eligible to vote");
+        }
+
+
+if-else:
+
+ if(test-condition){
+ // code
+ }
+ else{
+   // code
+ }
+
+   var age = 7;
+        if (age >= 18) {
+            console.log("eligible to vote");
+        }
+        else {
+            console.log("not eligible to vote");
+        }
+
+
+switch: 
+when we have more than two options / possibilities / choices / conditions then we 
+can use switch case.
+
+ syntax: 
+    switch(choice){
+      case case_value1 :  // code ;
+      case case_value2 :  // code; 
+
+      .
+      .
+      .
+      case case_valuen:  //code 
+      default : // code
+    }
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var choice = "java";
+        switch (choice) {
+            case "java": console.log("90 hours"); break;
+            case "react": console.log("45 hours"); break;
+            case "angular": console.log("30 hours"); break;
+            default: console.log("this course is not available");
+        }
+    </script>
+</body>
+
+</html>
+
+Problem Statement: 
+
+Implement a drop down list with cities, based on the cities display the test centers accordingly.
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <select id="city" onchange="captureChoice()">
+        <option>Select City</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="rangareddy">Ranga Reddy</option>
+        <option value="hanumakonda">Hanuma Konda</option>
+        <option value="warangal">Warangal</option>
+    </select>
+    <select id="testCenters">
+
+    </select>
+
+    <script>
+        function captureChoice() {
+            var testCenters = document.getElementById("testCenters");
+            var city = document.getElementById("city").value;
+            switch (city) {
+                case "hyderabad": testCenters.innerHTML = "<option >HYD-TSTCTR-01</option><option >HYD-TSTCTR-02</option><option >HYD-TSTCTR-03</option><option>HYD-TSTCTR-04</option>"; break;
+                case "rangareddy": testCenters.innerHTML = "<option >RGR-TSTCTR-01</option><option >RGR-TSTCTR-02</option><option >RGR-TSTCTR-03</option><option>RGR-TSTCTR-04</option>"; break;
+                case "hanumakonda": testCenters.innerHTML = "<option >HK-TSTCTR-01</option><option >HK-TSTCTR-02</option><option >HK-TSTCTR-03</option><option>HK-TSTCTR-04</option>"; break;
+                case "warangal": testCenters.innerHTML = "<option >WGL-TSTCTR-01</option><option >WGL-TSTCTR-02</option><option >WGL-TSTCTR-03</option><option>WGL-TSTCTR-04</option>"; break;
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
+
+Problem Statement: 
+
+Create a drop down list of Date of Birth from facebook page and provide a button. 
+https://www.facebook.com/ 
+
+once the user clicks on the button, then capture the date, month , year and display it on the UI.
+
+
+Problem Statement: 
+
+Create a drop down list of 5 languages and based on the user selection, display the content based on 
+the lanugage. 
+
+2. Iterative : while, do-while and for loop
+3. Jump : return, continue and break
+
+
+
+

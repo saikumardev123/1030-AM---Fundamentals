@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <select id="city" onchange="captureChoice()">
+        <option>Select City</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="rangareddy">Ranga Reddy</option>
+        <option value="hanumakonda">Hanuma Konda</option>
+        <option value="warangal">Warangal</option>
+    </select>
+    <select id="testCenters">
+
+    </select>
+
+    <script>
+        function captureChoice() {
+            var testCenters = document.getElementById("testCenters");
+            var city = document.getElementById("city").value;
+            switch (city) {
+                case "hyderabad": testCenters.innerHTML = "<option >HYD-TSTCTR-01</option><option >HYD-TSTCTR-02</option><option >HYD-TSTCTR-03</option><option>HYD-TSTCTR-04</option>"; break;
+                case "rangareddy": testCenters.innerHTML = "<option >RGR-TSTCTR-01</option><option >RGR-TSTCTR-02</option><option >RGR-TSTCTR-03</option><option>RGR-TSTCTR-04</option>"; break;
+                case "hanumakonda": testCenters.innerHTML = "<option >HK-TSTCTR-01</option><option >HK-TSTCTR-02</option><option >HK-TSTCTR-03</option><option>HK-TSTCTR-04</option>"; break;
+                case "warangal": testCenters.innerHTML = "<option >WGL-TSTCTR-01</option><option >WGL-TSTCTR-02</option><option >WGL-TSTCTR-03</option><option>WGL-TSTCTR-04</option>"; break;
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
