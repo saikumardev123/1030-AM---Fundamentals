@@ -121,7 +121,6 @@ https://www.facebook.com/
 
 once the user clicks on the button, then capture the date, month , year and display it on the UI.
 
-
 Problem Statement: 
 
 Create a drop down list of 5 languages and based on the user selection, display the content based on 

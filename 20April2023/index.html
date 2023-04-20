@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <center>
+        <h1>Add Product</h1>
+        <input type="text" id="pid" placeholder="enter pid"> <br><br>
+        <input type="text" id="name" placeholder="enter name"> <br><br>
+        <input type="number" id="price" placeholder="enter price"> <br><br>
+        <input type="text" id="seller" placeholder="enter seller"> <br><br>
+        <button onclick="addProduct()">Add Product</button>
+    </center>
+
+    <ul id="ul">
+
+    </ul>
+
+    <script>
+        var products = [];
+        function addProduct() {
+            var pid = document.getElementById("pid").value;
+            var name = document.getElementById("name").value;
+            var price = document.getElementById("price").value;
+            var seller = document.getElementById("seller").value;
+            var product = {
+                productId: pid,
+                productName: name,
+                price: price,
+                seller: seller
+            }
+            console.log("product", product);
+            products.push(product);
+            console.log(products);
+            showProducts();
+        }
+        function showProducts() {
+            var ul = document.getElementById("ul");
+            var index = 0;
+            var listOfItems = "";
+            while (index < products.length) {
+                var obj = products[index];
+                listOfItems = listOfItems + "<li>" + obj.productId + "&nbsp;&nbsp;&nbsp;" + obj.productName + "&nbsp;&nbsp;&nbsp;" + obj.price + "&nbsp;&nbsp;&nbsp;" + "<button>Delete</button>" + "</li>";
+                index++;
+            }
+            ul.innerHTML = listOfItems;
+        }
+    </script>
+</body>
+
+</html>
