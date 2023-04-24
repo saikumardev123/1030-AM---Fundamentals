@@ -1,0 +1,30 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+
+
+        var arr = ["kiran", "rajesh", "nikhil", "john", "mike", "susan"]
+
+        // arr.forEach(function (value) {
+        //     console.log(value);
+        // })
+
+        function customForEach(callback) {
+            for (var index = 0; index < arr.length; index++) {
+                callback(arr[index]);
+            }
+        }
+
+        customForEach(function (value) {
+            console.log(value);
+        })
+
+
+    </script>
+</body>
+
+</html>

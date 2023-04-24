@@ -1,0 +1,210 @@
+do-while:
+
+syntax:  
+
+do{
+
+ // code
+
+}while(test-condition)
+
+If we want the first iteration to be executed without checking the 
+condition, then we can use do-while. 
+
+for loop: 
+
+for loop is an enhancement for while loop. 
+
+syntax: 
+
+for(initialization; test-condition; inc/dec){
+    // code
+}
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var users = ["kiran", "rajesh", "nikhil"];
+        for (var x = 0; x < users.length; x++) {
+            console.log(users[x]);
+        }
+    </script>
+</body>
+
+</html>
+
+
+Jump Statements: 
+
+break :  terminate a block of code, then use break
+
+return  : to terminate a function / to return some data after an operation.
+
+continue : to skip a specific iteration based on a condition. 
+
+Problem Statement: 
+
+ var users = ["kiran", "rajesh", "nikhil", "rajesh", "nikhil","kiran"];
+
+ Remove the duplicates from the above array. 
+
+ <html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var users = ["kiran", "rajesh", "nikhil", "rajesh", "nikhil", "kiran"];
+        var tempArr = [];
+        for (var x = 0; x < users.length; x++) {
+            if (tempArr.includes(users[x])) {
+                continue;
+            }
+            tempArr.push(users[x]);
+        }
+
+        console.log(tempArr);
+    </script>
+</body>
+
+</html>
+
+return: 
+
+if we want to terminate a function, then we can use return.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input id="username" type="text" onkeyup="authenticate()" placeholder="enter username"><span id="msg"
+        style="color:red"></span>
+
+    <script>
+
+        function authenticate() {
+
+            var username = document.getElementById("username").value;
+            var msg = document.getElementById("msg");
+            if (username.length == 0) {
+                msg.innerHTML = "Username required";
+                return;
+            }
+            if (username.length < 5) {
+                msg.innerHTML = "Username should be atleast 5 chars";
+
+            }
+            else {
+                msg.innerHTML = "";
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+functions: 
+
+A function is a block of code which takes an input (optional), process it and provides some result. 
+
+
+syntax:
+
+function function_name(parameters){
+
+    // code
+}
+
+function_name(arguments);
+
+
+ function f1(a, b) {
+            console.log(a, b);
+        }
+        f1(10, 20)
+
+ function f1(a, b) {
+            console.log(a, b);
+            console.log(arguments);
+            console.log(arguments[2]);
+            console.log(arguments[3]);
+        }
+        f1(10, 20, 30, 40);
+
+
+* In JS, the recent implementation of the function is triggered and JS looks only for function name 
+to call the functions, it does not worry about function parameters. 
+
+   function x() {
+            console.log("x");
+        }
+        function x(a, b) {
+            console.log(a, b);
+        }
+        x();
+
+Anonymous Functions:
+
+A function that does not have any name is known as anonymous function.
+In JS, a function can be passed as an argument.
+
+  function f1(input) {
+            input();
+        }
+        f1(function () {
+            console.log("anonmyous function called");
+        })
+
+
+The anonmyous functions which are passed to a function are known as call back functions because these functions 
+will be called back after some operation is done. 
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+
+
+        var arr = ["kiran", "rajesh", "nikhil", "john", "mike", "susan"]
+
+        // arr.forEach(function (value) {
+        //     console.log(value);
+        // })
+
+        function customForEach(callback) {
+            for (var index = 0; index < arr.length; index++) {
+                callback(arr[index]);
+            }
+        }
+
+        customForEach(function (value) {
+            console.log(value);
+        })
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+
