@@ -1,0 +1,131 @@
+Function Expressions:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        function f1(x) {
+            x();
+        }
+        function f2(y) {
+            y();
+        }
+        function f3(z) {
+            z();
+        }
+
+        var m = function () { // function expression
+            console.log("anonymous 2");
+        }
+
+        f1(m);
+        f2(m);
+        f3(m);
+
+        m = null;
+        console.log(m);
+
+    </script>
+
+</body>
+
+</html>
+
+First class functions:
+
+If a function is treated as a first class citizen which means every functionality 
+involves the functions.
+
+In JS, since all the functions are first class functions, we get the following 
+advantages,
+1.Pass a function as an argument. 
+2.Store a function a variable. 
+3. A function can return another function.
+
+
+Problem Statement: Map the first object keys to turn out to be second object keys.
+
+{
+    uid:'', 
+    fname: '', 
+    level1_manager: ''
+}
+
+// logic - mapping
+
+{
+    userId: '', 
+    fullname: '', 
+    manager: ''
+}
+
+IIFE: Immediately Invoked Function Expresions. 
+
+If we have a requirement where we want a function to be executed 
+only once and should not be available for invocation, then we 
+can use IIFEs.
+
+syntax: 
+
+  (function(){
+       // code
+  })();
+
+  Note: IIFEs can be called only once when the script is loaded. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        (function () {
+            console.log("I am an IIFE");
+        })();
+        console.log("some code");
+    </script>
+
+</body>
+
+</html>
+
+Web Services:  Any resource that can be accessible over internet is 
+known as web service.
+
+
+Data Providers are the server side applications that provide data based 
+on the authorization and authentication.
+
+PVR - Screen - 10 tickets - 6
+BookMyShow - P1 - 4 TICKETS , P4 - No tickets available
+PayTM - P2 - 4 TICKETS 
+PVR - P3 - 2 Tickets
+GPAY
+
+
+Problem Statement: 
+
+Make an API call to FakeStore API to get the products from the 
+server. 
+
+
+HTTP: 
+
+Hyper Text Transfer Protocol is used to provide communication between 
+two or more applications for resources(data) transfer. 
+
+
+JS -> Object -> XMLHttpRequest()
+
+
+
+
+

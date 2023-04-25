@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+</head>
+
+<div id="showImage">
+
+</div>
+
+<body>
+
+    <script>
+
+        (
+            function () {
+
+                var http = new XMLHttpRequest();
+                http.open("get", "https://fakestoreapi.com/products");
+                http.send();
+                http.onreadystatechange = function () {
+                    if (http.readyState == 4) {
+                        var products = JSON.parse(http.responseText);
+                        console.log("products", products);
+                        document.getElementById("showImage").innerHTML = "<img src=" + products[0].image + ">";
+                    }
+                }
+
+            }
+        )();
+
+        // (function () {
+        //     console.log("I am an IIFE");
+        // })();
+        // console.log("some code");
+    </script>
+
+</body>
+
+</html>
