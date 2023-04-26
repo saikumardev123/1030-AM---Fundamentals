@@ -1,0 +1,223 @@
+Call, Apply and Bind:
+
+call, apply: 
+
+call is used to substitute one object into another object function for 
+resuability of the function in the other objects.
+
+note: the structures of the objects must be same to use call function. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var employee = {
+            name: "kiran",
+            address: "hyderabad",
+            getDetails: function () {
+                return this.name + "\t" + this.address;
+            }
+        }
+        console.log(employee.getDetails());
+        var emp2 = {
+            name: "naveen",
+            address: "banglore",
+        }
+
+        console.log(employee.getDetails.call(emp2));
+
+    </script>
+</body>
+
+</html>
+
+
+apply: same as call , but it automatically spreads the array while we pass it as the next argument. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var employee = {
+            name: "kiran",
+            address: "hyderabad",
+            getDetails: function (a, b, c) {
+                return this.name + "\t" + this.address + "\t" + a + "\t" + b + "\t" + c;
+            }
+        }
+        // console.log(employee.getDetails());
+        var emp2 = {
+            name: "naveen",
+            address: "banglore",
+        }
+        var arr = [1, 2, 3]
+        console.log(employee.getDetails.call(emp2, arr[0], arr[1], arr[2]));
+        console.log(employee.getDetails.apply(emp2, arr));
+
+    </script>
+</body>
+
+</html>
+
+bind:  Self Learn. 
+
+Problem Statement: 
+
+Create a customer object -> name, accno, balance, getAccountDetails(). 
+
+create another customer object with same structure without getAccountDetails(), reuse the first object getAccountDetails() 
+using second object with call function. 
+
+<html>
+
+<head>
+
+</head>
+
+
+
+<body>
+    <script>
+ var customer = {
+name: " Chandini",
+accno: "256525",
+balance: "66965",
+getAccountDetails: function(){
+    return this.name + "\t" + this.accno + "\t" + this.balance;
+}
+
+ }
+ var customer2 = {
+name: " Sai",
+accno: "36996",
+balance: "789965",
+ }
+console.log(customer.getAccountDetails.call(customer2));
+
+    </script>
+
+</body>
+
+</html>
+
+call by value / reference: 
+
+
+call by value -> It is applicable to primtive types(number, boolean and string ) 
+where the value is passed instead of reference. 
+
+ var a = 100;
+        function f1(y) {
+            console.log(y); // 100
+            y = 200;
+        }
+
+        f1(a); // f1(100) - call/pass  by value
+
+        console.log(a); // 100
+
+call by reference: 
+
+call by reference is applicable to non primitive datatypes (arrays and objects). 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var a = ["x", "y", "z"]; // a,y => 101x
+        function f1(y) {
+            y.push("m");
+            console.log(y);
+        }
+        f1(a); //  f1(101x) - call/pass by reference
+        console.log(a[3]); // ?
+    </script>
+</body>
+</html>
+
+
+Closures: 
+
+ A closure is a scope that gets formed when a function is created inside another function. 
+ 
+ A nested function forms a closure.
+
+ In JS, if we want to create private functions, then we can use closures. 
+
+ <html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        function outer() {
+            var a = 10, b = 20;
+            function inner() { // private function 
+                console.log(a);
+                console.log(b);
+            }
+            inner();
+            return inner;
+        }
+        var m = outer();
+        m();
+    </script>
+</body>
+
+</html>
+
+
+Array methods in detail: 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        // foreach vs filter vs map
+
+        var arr = [1, 2, 3, 4, 5, 6, 9];
+
+        // iterate
+        arr.forEach(function (value) {
+            console.log(value);
+        })
+
+        var res = arr.filter(function (value) {
+            return value % 2 == 0;
+        })
+        console.log(res);
+
+        var res2 = arr.filter(function (value) {
+            return value + 10;
+        })
+        console.log(res2);
+
+        //modify the array. 
+        var res3 = arr.map(function (value) {
+            return value + 10;
+        })
+        console.log(res3);
+        console.log(arr);
+    </script>
+</body>
+
+</html>
