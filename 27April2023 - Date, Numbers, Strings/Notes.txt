@@ -1,0 +1,133 @@
+Numbers and Dates:
+
+Numbers: 
+
+In JS, we can create numbers in 2 ways. 
+
+1. using primitive type.
+2. using object.
+
+  var age = 21;
+        console.log(age);
+
+        var age2 = new Number(21);
+        console.log(age2);
+
+        console.log(age == age2);
+        console.log(age === age2);
+
+        var rating = 4.1212;
+
+        console.log(rating.toFixed(2));
+        console.log(typeof rating.toString());
+        console.log(rating.toPrecision(3));
+
+
+Date:  A Date constructor provides the current system date and time. 
+
+ var date = new Date();
+        console.log(date);
+        console.log(date.getDate());
+        console.log(date.getMonth());
+        console.log(date.getFullYear());
+        console.log(date.getHours());
+        console.log(date.getMinutes());
+        console.log(date.getSeconds());
+
+Problem Statement: 
+
+Create a date format (timestamp) to store the data in DB. 
+
+HH:MM:SS MM/DD/YYYY
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        function getTimestamp() {
+            var date = new Date();
+            var dFormat = concatZero((date.getMonth() + 1)) + "/" + concatZero(date.getDate()) + "/" + date.getFullYear();
+            var tFormat = concatZero(date.getHours()) + ":" + concatZero(date.getMinutes()) + ":" + concatZero(date.getSeconds())
+            return tFormat + " " + dFormat;
+        }
+        console.log(getTimestamp());
+        function concatZero(input) {
+            if (input < 10) {
+                input = '0' + input;
+            }
+            return input;
+        }
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create the timestamp in the following format. 
+
+input -> 2023/04/27 10:11:45   vs current time = difference
+
+0 - 60 seconds -  just now  
+
+1-60 mins -   5 mins ago 
+
+1-24 hours  -  6 hours ago 
+
+1- 7 - 6 days ago and above that -> 1 week ago
+
+
+Strings: Refer 13 April for fundamentals if you have forgot.
+
+Problem Statements: 
+
+Find the occurance of a character in a string. 
+
+var str = "Its a long weekend, whats your plan?";
+
+ how many times e is repeated?
+
+
+ var str = "Its a long weekend, whats your plan?";
+        function findOccurance(str, character) {
+            var counter = 0;
+            for (var i = 0; i < str.length; i++) {
+                if (character == str[i]) {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+        console.log(findOccurance(str, 'u'));
+
+
+
+
+Problem Statements: 
+
+Find the occurance of each character in a string. 
+
+var str = "Its a long weekend, whats your plan?";
+
+
+step 1:  split the string into an array
+
+step 2: remove the spaces in the array. 
+
+step 3: remove the duplicate characters from the array. 
+
+step 4 (already done): take each character and find the count of it and display it.
+
+
+
+
+
+
+
+
+

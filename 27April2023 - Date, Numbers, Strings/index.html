@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var str = "Its a long weekend, whats your plan?";
+        var updatedStr = str.replaceAll(' ', '').replaceAll('?', '').replaceAll(',', '').split("");
+        console.log(updatedStr);
+        var finalChars = [];
+        for (var x = 0; x < updatedStr.length; x++) {
+            if (finalChars.includes(updatedStr[x])) {
+                continue;
+            }
+            finalChars.push(updatedStr[x]);
+        }
+
+        for (var y = 0; y < finalChars.length; y++) {
+            var count = findOccurance(str, finalChars[y]);
+            console.log(finalChars[y] + ":" + count);
+        }
+        console.log(finalChars);
+        function findOccurance(str, character) {
+            var counter = 0;
+            for (var i = 0; i < str.length; i++) {
+                if (character == str[i]) {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+        console.log(findOccurance(str, 'u'));
+    </script>
+</body>
+
+</html>
