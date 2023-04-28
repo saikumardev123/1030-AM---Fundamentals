@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        var x = 100;
+        var y = 200;
+
+        function f1() {
+            console.log(x);
+            console.log(y);
+            var x = 9;
+            var y = 10;
+        }
+        f1();
+        console.log(x);
+        console.log(y);
+
+        /*
+
+                 var x,y;
+                 x=100;
+                 y=200;
+                 function f1(){
+                     var x,y; // undefined, undefined
+                     console.log(x);
+                     console.log(y);
+                     x=9;
+                     y=10;
+                 }
+
+
+        */
+
+
+
+    </script>
+</body>
+
+</html>

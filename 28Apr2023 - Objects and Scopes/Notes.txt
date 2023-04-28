@@ -1,0 +1,193 @@
+Objects Methods: 
+
+create, keys, values,freeze
+
+
+create: 
+
+If we want to create a new object from the existing object, 
+then we can use create function. 
+
+var bank = {
+            bank_name: "ICICI",
+            branch: "Hitech City"
+        }
+        var customer = Object.create(bank);
+        console.log(customer);
+        console.log(customer.bank_name);
+        console.log(customer.branch);
+        customer.name = "kiran";
+        customer.custId = 9799;
+        console.log(customer);
+
+
+Problem Statement: 
+
+Create a table header dyamically for the following data.
+
+[
+    {
+        username: 'kiran', 
+        address: 'hyderabad', 
+        pincode:500016
+    },
+    {
+        username: 'kiran', 
+        address: 'hyderabad', 
+        pincode:500016
+    },
+    {
+        username: 'kiran', 
+        address: 'hyderabad', 
+        pincode:500016
+    }
+]
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <table border="1">
+
+        <thead id="thead">
+
+
+        </thead>
+
+    </table>
+    <script>
+        var users = [
+            {
+                username: 'kiran',
+                address: 'hyderabad',
+                pincode: 500016
+            },
+            {
+                username: 'kiran',
+                address: 'hyderabad',
+                pincode: 500016
+            },
+            {
+                username: 'kiran',
+                address: 'hyderabad',
+                pincode: 500016
+            }
+        ];
+        var userKeys = Object.keys(users[0]);
+        console.log(userKeys);
+
+        var tableHeaders = "";
+
+        userKeys.forEach(function (key) {
+            tableHeaders += "<th>" + key + "</th>"
+        })
+
+        document.getElementById("thead").innerHTML = tableHeaders;
+    </script>
+</body>
+
+</html>
+
+
+values:
+
+ var user =
+        {
+            username: 'kiran',
+            address: 'hyderabad',
+            pincode: 500016
+        }
+
+        console.log(user);
+
+        console.log(Object.values(user));
+
+
+freeze:
+
+To finalize / freeze some object. 
+ var config = Object.freeze({
+            portNo: 8788,
+            IPAddress: "67.152.44.56",
+            host: "digital-lync.com"
+        });
+        config.portNo = 9000;
+        config.x = 100;
+        console.log(config);
+
+seal:  used to allow the modification to existing keys but prevent from adding / removing the keys. 
+
+  var config = Object.seal({
+            portNo: 8788,
+            IPAddress: "67.152.44.56",
+            host: "digital-lync.com"
+        });
+        config.portNo = 9000;
+        config.protocol = "https";
+        console.log(config);
+
+Problem Statement: 
+
+Create a dynamic table from the following users data. 
+
+ var users = [
+            {
+                username: 'kiran',
+                address: 'hyderabad',
+                pincode: 500016
+            },
+            {
+                username: 'kiran',
+                address: 'hyderabad',
+                pincode: 500016
+            },
+            {
+                username: 'kiran',
+                address: 'hyderabad',
+                pincode: 500016
+            }
+        ];
+
+Creation of similar objects using function Constructor
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        function Employee(eid, name, role, project) {
+            this.eid = eid;
+            this.name = name;
+            this.role = role;
+            this.project = project;
+        }
+        var employee1 = new Employee("101", "KIRAN", "DEV", "CRM");
+        var employee2 = new Employee("102", "raj", "DEV", "CRM");
+        console.log(employee1);
+        console.log(employee2);
+    </script>
+</body>
+
+</html>
+
+this: In the above, this keywod always refers to the current object. 
+
+
+scopes: There are 2 types of scopes: global and local
+
+Global :  All global variables are created here.
+
+local : All local variables are created here. 
+
+
+
+
+
+
