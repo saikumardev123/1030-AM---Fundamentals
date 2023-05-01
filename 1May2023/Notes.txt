@@ -1,0 +1,315 @@
+
+Objects Problem Statement Solution: 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <table border="1">
+
+        <thead id="thead">
+
+
+        </thead>
+
+        <tbody id="tr">
+
+
+        </tbody>
+
+    </table>
+    <script>
+        var users = [
+            {
+                username: 'kiran',
+                address: 'hyderabad',
+                pincode: 500016
+            },
+            {
+                username: 'Sai',
+                address: 'Vizag',
+                pincode: 500014
+            },
+            {
+                username: 'Rajesh',
+                address: 'Bangalore',
+                pincode: 500018
+            },
+            {
+                username: 'Shiva',
+                address: 'Mumbai',
+                pincode: 500020
+            }
+        ];
+        var userKeys = Object.keys(users[0]);
+        console.log(userKeys);
+
+        var tableHeaders = "";
+
+        userKeys.forEach(function (key) {
+            tableHeaders += "<th>" + key + "</th>";
+        })
+
+        var tableRows = "";
+
+        for (i = 0; i < users.length; i++) {
+            var userValues = Object.values(users[i]);
+            console.log(userValues);
+            tableRow = "";
+            userValues.forEach(function (values) {
+                tableRow += "<td>" + values + "</td>";
+            })
+            tableRow = "<tr>" + tableRow + "</tr>";
+            tableRows += tableRow;
+        }
+        document.getElementById("thead").innerHTML = tableHeaders;
+        document.getElementById("tr").innerHTML = tableRows;
+
+    </script>
+</body>
+
+</html>
+
+
+
+Events:
+
+JS provides different types of events to handle the user actions. 
+
+An action is considered as an event.
+
+ex: clicking on a button, hovering on text, clicking on an image, scrolling down....
+
+Whenever an event occurs, there should be a event handler(function). 
+
+
+Events List: https://www.w3schools.com/jsref/dom_obj_event.asp
+
+
+Problem Statement: 
+
+Restrict the user from pasting and copying content from a text field.
+
+<html oncontextmenu="return rightClick()">
+
+<head>
+
+</head>
+
+<body>
+
+    <input size="30" type="text" oncopy="return copy()" onpaste="return paste()" placeholder="enter acc no">
+    <span id="msg" style="color:red"></span>
+
+    <script>
+
+        var msg = document.getElementById("msg");
+
+        function paste() {
+            msg.innerHTML = "paste is disabled!";
+            return false;
+        }
+        function copy() {
+            msg.innerHTML = "copy is disabled";
+            return false;
+        }
+
+        function rightClick() {
+            alert("right click is disabled");
+            return false;
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+Working with Validations:
+
+Problem Statement: 
+
+Create a validation for the  password with the following constraints.
+
+1 uppercase, 1 lowercase, 1 digit, 1 special character, min chars should be 8. 
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <input size="30" id="password" onkeyup="validatePassword()" type="text" placeholder="enter password">
+    <span id="msg" style="color:red"></span>
+    <script>
+        var msg = document.getElementById("msg");
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+
+            if (password.length == 0) {
+                msg.innerHTML = "password cannot be empty";
+                return;
+            }
+            else
+                if (password.length < 8) {
+                    msg.innerHTML = "password should be atleast 8 chars";
+                    return;
+                }
+                else {
+                    msg.innerHTML = "";
+                }
+        }
+    </script>
+
+</body>
+
+</html>
+
+Advance Validations:  We implement Advanced validations using regular expressions. 
+
+
+Regular Expressions: 
+
+REs are used to create search patterns.
+
+syntax: 
+
+ var pattern = /<pattern>/<modifier>
+
+MODIFIER:
+
+i :  case insensitive
+
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <script>
+
+        var str = "hello world";
+        var pattern = /H/i;
+        console.log(pattern.test(str));
+
+
+    </script>
+
+</body>
+
+</html>
+
+Self learn g(global), multiline(m) modifiers. 
+
+Reference: https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+
+Brackets: 
+
+[abc]: a or b or c
+
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <script>
+        var str = "ahello aWorld";
+        var pattern = /a[xyw]m/i;
+        console.log(pattern.test(str));
+
+    </script>
+
+</body>
+
+</html>
+
+
+[^abc]:
+
+
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <script>
+        var str = "abcd";
+        var pattern = /[^abc]/;
+        console.log(pattern.test(str));
+
+    </script>
+
+</body>
+
+</html>
+
+
+[a-z], [A-Z], [0-9],[^0-9]
+
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var str = "178788888888888888888";
+        var pattern = /[^0-9]/;
+        console.log(pattern.test(str));
+    </script>
+
+</body>
+
+</html>
+
+
+Meta Characters: 
+
+.: represents placeholder which can hold anything other than \n. 
+
+
+Problem Statement: 
+
+
+Create a pattern for domain name. 
+
+@gmail.com 
+
+var str= "sai@gmail.com"  // true 
+var str= "sai@gmail*com"  // false 
+var str= "sai@gmail!com" // false 
+
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var str = "sai@gmail.com";
+        var pattern = /@gmail[.]com/;
+        console.log(pattern.test(str));
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
