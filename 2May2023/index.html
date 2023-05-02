@@ -1,0 +1,29 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        var employee;
+        function getEmployeeDetails() {
+            //API Call
+            employee = {
+                name: "kiran",
+                address: "hyderabad"
+            }
+        }
+        getEmployeeDetails();
+        try {
+            console.log(employee.name); //
+            console.log(employee.address);
+        } catch (error) {
+            console.log(error);
+        }
+        function square(num) {
+            return num * num;
+        }
+        console.log(square(10));
+    </script>
+</body>
+
+</html>

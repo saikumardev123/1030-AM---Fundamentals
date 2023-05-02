@@ -1,0 +1,111 @@
+Quantifiers:
+
+n+:  Atleast 1 n or minimum 1 n.
+
+ var str = "aBHyFDYDDGDJDGHy";
+        var pattern = /a[A-Z]+y/;
+        console.log(pattern.test(str));
+
+n* : Optional or can be 1 or more than 1 
+
+  var str = "aJHVSCJHVSDJCV1y";
+        var pattern = /a[A-Z]*[0-9]y/;
+        console.log(pattern.test(str));
+
+
+n?: zero or 1 occurance
+
+ var str = "aAB1y";
+        var pattern = /a[A-Z]?[0-9]y/;
+        console.log(pattern.test(str));
+n{X}: To specify the number of characters required.
+
+  var str = "aABAy";
+        var pattern = /a[A-Z]{3}y/;
+        console.log(pattern.test(str));
+
+n{X,Y}: 
+
+ var str = "aHy";
+        var pattern = /a[A-Z]{1,3}y/;
+        console.log(pattern.test(str));
+
+n{X,}:
+
+ var str = "aHAGHGSVXJHSVJVSJCBJSDBCy";
+        var pattern = /a[A-Z]{2,}y/;
+        console.log(pattern.test(str));
+
+
+Problem Statement: 
+
+Create a pattern for the following requirement. 
+
+start wth HYD and can have between 1 to  3 digits and should end with BLUEDRT
+
+valid ones: HYD1BLUEDRT,HYD123BLUEDRT
+
+invalid ones: HYDBLUEDRT, HYD12345BLUEDRT
+
+ var str = "HYD123BLUEDRT";
+        var pattern = /^HYD[0-9]{1,3}BLUEDRT$/;
+        console.log(pattern.test(str));
+
+
+Task:
+
+Create a validation for the  password with the following constraints.
+1 uppercase, 1 lowercase, 1 digit, 1 special character, min chars should be 8.
+
+
+
+
+Error Handling:
+
+Error Handling is not fixing the errors.
+
+Error Handling is the process of skipping the code that raised an error at the time of execution and continue 
+the rest of the execution flow.
+
+Fixing the errors are known as Bug Fixes.
+
+We can use try-catch mechanism to handle the errors.
+
+try{
+
+}
+catch(){
+
+}
+
+
+<html>
+
+<head></head>
+
+<body>
+
+    <script>
+        var employee;
+        function getEmployeeDetails() {
+            //API Call
+            employee = {
+                name: "kiran",
+                address: "hyderabad"
+            }
+        }
+        getEmployeeDetails();
+        try {
+            console.log(employee.name); //
+            console.log(employee.address);
+        } catch (error) {
+            console.log(error);
+        }
+        function square(num) {
+            return num * num;
+        }
+        console.log(square(10));
+    </script>
+</body>
+
+</html>
