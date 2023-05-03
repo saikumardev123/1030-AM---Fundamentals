@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input id="username" type="text" placeholder="username">
+    <button onclick="capture()">Submit</button>
+    <script>
+        function capture() {
+            console.log(document);
+            var username = document.getElementById("username");
+            console.log(username);
+            username.value = "hello";
+            username.style.color = "red";
+            username.size = 100;
+        }
+    </script>
+
+
+</body>
+
+</html>

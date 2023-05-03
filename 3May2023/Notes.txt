@@ -1,0 +1,123 @@
+finally block:
+
+if we want some mandatory statements to be executed irrespective 
+of whether an error occured or not, then we should use 
+finally block.
+
+
+ try {
+            console.log("connected to DB");
+            console.log(a);
+        }
+        catch (error) {
+            console.log(error);
+            // throw new Error("some error");
+        }
+        finally {
+            console.log("database disconnection");
+        }
+
+There are 7 types of JavaScript errors: Syntax error, Reference Error, Type Error, Evaluation Error, RangeError, URI Error and Internal Error.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
+
+
+Garbage Collection:
+
+It is the process followed by Runtime engine to clean up the 
+unwanted objects (Garbage) from the memory.
+
+Garbage Collection is the process of  removing the unused / 
+unreferenced objects from the memory. 
+
+Runtime Engine uses garbage collector to remove the unused objects.
+
+When the threshold reaches to a limit, then garbage collector. 
+
+We need to write Garbage Collector friendly code. 
+
+var obj = {
+    x:1
+}
+
+console.log(obj);
+
+obj= null;
+
+
+https://www.geeksforgeeks.org/memory-management-in-javascript/
+
+
+Best coding practices:
+
+1. Write Garbage Collector Friendly code.
+
+2. Use meaninful names to variables, functions etc..
+
+3. Code factoring to avoid code redundancy.
+
+4. use comments wherever required to describe about some functionality.
+
+5. Do not write multiple functionalities in a single function, instead follow single responsibility rule. 
+
+One function should perform only one functionality.
+
+6. use === instead of ==
+
+7. Try to minimize the global variables. 
+
+8. follow naming conventions, if the function name has 2 words, then second word's first letter should be uppercase and so on.
+
+
+DOM: Document Object Model 
+
+DOM is used to provide dynamic nature to the html web pages. 
+
+HTML Pages -> Documents
+
+element -> attributes = properties
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+
+HTML -> Browser -> DOM Tree-> Render -> UI 
+
+
+DOM provides document object to get the access to the complete HTML Page. 
+
+
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input id="username" type="text" placeholder="username">
+    <button onclick="capture()">Submit</button>
+    <script>
+        function capture() {
+            console.log(document);
+            var username = document.getElementById("username");
+            console.log(username);
+            username.value = "hello";
+            username.style.color = "red";
+            username.size = 100;
+        }
+    </script>
+
+
+</body>
+
+</html>
+
+
+

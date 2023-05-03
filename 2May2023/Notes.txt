@@ -107,5 +107,4 @@ catch(){
         console.log(square(10));
     </script>
 </body>
-
 </html>
