@@ -1,0 +1,170 @@
+DOM Methods:
+
+There are multiple methods in DOM such as 
+
+getElementById(), getElementsByClassName(), getElementsByName(), getElementsByTagName()
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" placeholder="username">
+    <p>This is some paragraph!</p>
+    <h1 class="x">This is some header</h1>
+    <h2 class="x">This is another header</h2>
+    <p class="x">This is another paragraph</p>
+
+    <script>
+        var p = document.getElementsByTagName("p");
+        console.log(p);
+        p[0].style.backgroundColor = "red";
+
+        var x = document.getElementsByClassName("x");
+
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.fontFamily = "cursive";
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+Events:
+
+We can add events dynamically to html elements.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <button>Generate Code</button>
+
+    <h1 id="code"></h1>
+
+    <script>
+
+        var button = document.getElementsByTagName("button");
+
+        button[0].onclick = function () {
+            document.getElementById("code").innerHTML = "968890"
+        }
+        
+
+
+    </script>
+
+</body>
+
+</html>
+
+Event Listeners:
+
+addEventListener(), removeEventListener():
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <button>Generate Code</button>
+    <button onclick="remove()">Remove</button>
+    <h1 id="code"></h1>
+    <script>
+        var button = document.getElementsByTagName("button");
+        function buttonHander() {
+            console.log("buttonHander called")
+            document.getElementById("code").innerHTML = "456789";
+        }
+        button[0].addEventListener('click', buttonHander);
+        function remove() {
+            button[0].removeEventListener('click', buttonHander);
+            document.getElementById("code").innerHTML = "";
+        }
+    </script>
+</body>
+
+</html>
+
+
+Navigation:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div>
+        <button>Generate Code</button>
+        <h1></h1>
+    </div>
+    <script>
+        document.body.firstChild.nextSibling.firstChild.nextSibling.addEventListener('click', function () {
+            alert("hello");
+            document.body.firstChild.nextSibling.lastChild.previousSibling.innerHTML = "2345678";
+        })
+
+    </script>
+</body>
+
+</html>
+
+
+Nodes: Every HTML element in DOM is converted into an object and is reffered as node. 
+
+Considering DOM, we can create, delete elements.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var body = document.body;
+        console.log(body);
+        var form = document.createElement('form');
+        console.log("form", form);
+        var username = document.createElement("input");
+        username.type = "text";
+        username.id = "username";
+        username.placeholder = "username here";
+        console.log(username);
+        var password = document.createElement("input");
+        password.type = "password";
+        password.id = "password";
+        password.placeholder = "password here";
+        console.log(password);
+        var button = document.createElement('button');
+        button.innerHTML = "Login";
+        form.appendChild(username);
+        form.appendChild(password);
+        form.appendChild(button);
+        console.log(form);
+        body.appendChild(form);
+    </script>
+</body>
+
+</html>
+
+Collections: HTMLCollection 
+
+Node Lists:  NodeList
+

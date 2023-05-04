@@ -1,0 +1,29 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <input type="text" placeholder="username">
+    <p>This is some paragraph!</p>
+    <h1 class="x">This is some header</h1>
+    <h2 class="x">This is another header</h2>
+    <p class="x">This is another paragraph</p>
+
+    <script>
+        var p = document.getElementsByTagName("p");
+        console.log(p);
+        p[0].style.backgroundColor = "red";
+
+        var x = document.getElementsByClassName("x");
+        console.log(x);
+
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.fontFamily = "cursive";
+        }
+
+    </script>
+    </script>
+</body>
+
+</html>
