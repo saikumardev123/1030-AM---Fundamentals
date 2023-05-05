@@ -18,7 +18,7 @@
         </ul>
     </center>
     <script>
-        var products = [];
+
 
         if (localStorage.getItem('products') == null) {
             localStorage.setItem('products', JSON.stringify([]));
@@ -47,6 +47,9 @@
         }
         function editProduct(productId) {
             console.log("productId", productId);
+            // get the local storage 
+            var products = JSON.parse(localStorage.getItem("products"));
+
             var index = 0;
             while (index < products.length) {
                 var obj = products[index];
@@ -70,6 +73,7 @@
             var seller = document.getElementById("seller").value;
             var index = 0;
             // get the local storage 
+            var products = JSON.parse(localStorage.getItem("products"));
             while (index < products.length) {
                 var obj = products[index];
                 if (obj.productId == pid) {
@@ -81,6 +85,7 @@
                 index++;
             }
             // update the localstorage with products.
+            localStorage.setItem('products', JSON.stringify(products));
             var btn = document.getElementById("addOrUpdateBtn");
             btn.innerHTML = "Add Product";
             btn.setAttribute('onclick', "addProduct()");
