@@ -1,0 +1,19 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (currentPosDetails) {
+                console.log("currentPosDetails", currentPosDetails);
+            })
+        }
+    </script>
+</body>
+
+</html>
