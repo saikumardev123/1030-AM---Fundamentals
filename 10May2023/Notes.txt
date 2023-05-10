@@ -1,0 +1,50 @@
+Problem Statement:
+
+file : soccer.js   setInterval(1000) -> score : 
+
+file: clock.js      setInterval(1000)-> display the time. 
+
+2 Web workers and put these 2 files in those web workers and run them.
+
+
+
+Maps API:
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>My First Google Map</h1>
+
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(40.741895, -73.989308),
+                zoom: 5,
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true,
+                rotateControl: true
+
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=myMap"></script>
+
+</body>
+
+</html>
+
+
+
+Web Worker:
+
+Clock.js 
