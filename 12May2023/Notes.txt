@@ -1,0 +1,12 @@
+Bootstrap:
+
+It is a css framework for designing responsive web pages.
+
+There are 2 ways to use bootstrap.
+
+1. using CDN (Content Delivery Network)
+2. by downloading bootstrap from web site.
+
+
+
+
