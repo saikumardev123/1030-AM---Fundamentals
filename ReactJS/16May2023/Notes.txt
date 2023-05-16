@@ -1,0 +1,212 @@
+Working with ES6:
+
+ES6 - ECMA Script version 6.
+
+ES6 is not a major version instead it is a version with minor changes and 
+new features.
+
+ES5 is the prerequisite for ES6.
+
+
+let, const and var keywords.
+
+var : we can create local and global variables.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var a = 100; // global
+        function f1() {
+            var m = 10 // local
+            console.log(m); // 10
+        }
+        f1();
+        console.log(a); // 100
+
+    </script>
+
+</body>
+
+</html>
+
+let: let is a block scoped variable which means, this variable can be 
+accessed only inside that scope.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        function f1() {
+            var x = 100;
+            console.log(x); // 100
+
+            if (x < 200) {
+                let x = 900;
+                console.log(x); // 900
+            }
+            console.log(x); // ? 100
+        }
+        f1();
+    </script>
+</body>
+
+</html>
+
+
+const: 
+
+const is used to create a variable with value that cannot be reassigned.
+
+
+w.r.t primitive types, const does not allow to modify values and does not allow 
+to reassign.
+
+w.r.t non-primitives, const does allow to modify the content/data but does 
+not allow to reassign.
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        const arr = [1, 2, 3];
+        arr.push(30);
+        // arr = [];
+        console.log(arr);
+
+        const obj = {
+            name: "digitallync",
+            address: "hyderabad"
+        }
+        obj.pincode = "500089";
+        // obj = {};
+        console.log(obj);
+
+        const age = 21;
+
+        age++; // age = age +1;
+
+
+    </script>
+</body>
+
+</html>
+
+Arrow Functions:
+
+Arrow Functions are the syntactical changes done to the general functions to save some number of lines 
+of code.
+
+Mostly, arrow functions should be used when we have a oneliner function implementation.
+
+syntax:
+
+// es5
+        function square(num) {
+            return num * num;
+        }
+        console.log(square(2));
+        //es6- arrow function 
+        var sqr = num => num * num;
+        console.log(sqr(4));
+
+default parameter values:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        // es6
+        function f1(a, b, c) {
+            if (a == undefined) {
+                a = 10;
+            }
+            if (b == undefined) {
+                b = 20;
+            }
+            if (c == undefined) {
+                c = 30;
+            }
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        f1(90);
+        //es6
+        function f2(a = 1, b = 2, c = 3) {
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        f2(10, 20, 30);
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        // es6
+        function f1(a, b, c) {
+            if (a == undefined) {
+                a = 10;
+            }
+            if (b == undefined) {
+                b = 20;
+            }
+            if (c == undefined) {
+                c = 30;
+            }
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        f1(90);
+        //es6
+        function f2(a = 1, b = 2, c = 3) {
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        f2(undefined, undefined, 30);
+
+    </script>
+</body>
+
+</html>
