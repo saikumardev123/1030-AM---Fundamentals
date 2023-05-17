@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+
+        var employees = [
+            {
+                name: "Kiran",
+                hike: "20%",
+                manager: "Rahul",
+                revisedRole: "Full Stack Dev"
+            },
+            {
+                name: "Rajesh",
+                hike: "10%",
+                manager: "Nithin",
+                revisedRole: "DevOps Engineer"
+            },
+            {
+                name: "Nikhil",
+                hike: "5%",
+                manager: "Rajesh",
+                revisedRole: "QA Lead"
+            },
+            {
+                name: "Naveen",
+                hike: "50%",
+                manager: "Rahul",
+                revisedRole: "Junior Software Engineer"
+            }
+        ]
+        for (var i = 0; i < employees.length; i++) {
+
+            var temp = `Hello ${employees[i].name}, 
+
+Your hike for the year 2023  is ${employees[i].hike} and your revised role is ${employees[i].revisedRole}
+
+Thanks, 
+${employees[i].manager}`
+            console.log(temp);
+        }
+
+    </script>
+</body>
+
+</html>

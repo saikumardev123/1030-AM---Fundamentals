@@ -1,0 +1,163 @@
+Rest Parameter: Rest Parameter is used to store additional arguments  in 
+an array.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        function f1(a, b, c) {
+            console.log(a, b, c);
+            console.log(arguments);
+            console.log(arguments[3]);
+            console.log(arguments[4]);
+        }
+        f1(10, 20, 30, 40, 50, 60, 70);
+
+        function f2(a, b, c, ...additionalValues) {
+            console.log(additionalValues);
+        }
+        f2(10, 20, 30, 40, 60, 9, 100, 89);
+
+    </script>
+</body>
+
+</html>
+
+
+Spread Operator:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        function f1(a, b, c) {
+            console.log(a, b, c);
+        }
+        var arr = [10, 20, 30];
+        f1(arr[0], arr[1], arr[2]);
+        f1(...arr); // spread operator
+
+    </script>
+</body>
+
+</html>
+
+String Interpolation: 
+
+
+         Hello Kiran,
+
+                        Your revised CTC is 24LPA after the increment this year.
+
+         Thanks,
+         Management 
+
+    
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        var str = " Hello Kiran,\n\n\t\t\t\tYour revised CTC is 24LPA after the increment this year. \n\nThanks,\nManagement";
+        var newStr = `
+        Hello Kiran,
+
+                           Your revised CTC is 24LPA after the increment this year.
+
+                                                                Thanks,
+                                                                Management
+        `
+        console.log(str);
+        console.log(newStr);
+    </script>
+</body>
+
+</html>
+
+
+Custom Interpolation:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+
+        var name = "rajesh";
+        var package = "29lpa";
+        var sentBy = "Ramesh";
+
+        var newStr = `
+        Hello ${name},
+
+                           Your revised CTC is ${package} after the increment this year.
+
+                                                                Thanks,
+                                                                 ${sentBy}
+        `
+
+        console.log(newStr);
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement:
+
+ var employees= [
+     {
+         name:"Kiran", 
+         hike: "20%",
+         manager: "Rahul",
+         revisedRole: "Full Stack Dev"
+     },
+     {
+         name:"Rajesh", 
+         hike: "10%",
+         manager: "Nithin",
+         revisedRole: "DevOps Engineer"
+     },
+     {
+         name:"Nikhil", 
+         hike: "5%",
+         manager: "Rajesh",
+         revisedRole: "QA Lead"
+     },
+     {
+         name:"Naveen", 
+         hike: "50%",
+         manager: "Rahul",
+         revisedRole: "Junior Software Engineer"
+     }
+ ]
+
+
+          
+     Template:
+
+       Hello <name>, 
+
+        Your hike for the year 2023  is <hike> and your revised role is <revisedrole>
+
+       Thanks, 
+       <manager>
+
+          
