@@ -1,0 +1,101 @@
+Modules: 
+
+import and export.
+
+
+file1.js:
+
+
+console.log("file 1 loaded");
+export function add(a, b) {
+    console.log(a + b);
+}
+
+add(1, 2);
+
+export var x = 100;
+
+export const PI_VALUE = 3.17;
+
+export const config = {
+    PORT_NO: 9091,
+    IP_ADDRESS: "http://localhost:9091"
+}
+
+
+
+file2.js:
+
+
+
+export default function getUsers() {
+    return ["kiran", "rajesh", "nikhil"]
+}
+
+export function ABC() {
+    return [1, 2, 4]
+}
+
+
+index.js:
+
+import { add, x, PI_VALUE, config } from './file1';
+import ALLUsers, { ABC } from './file2';
+add(10, 20);
+console.log(x);
+console.log(PI_VALUE);
+console.log(config);
+//console.log(getUsers());
+console.log(ALLUsers());
+console.log(ABC());
+
+
+Working with Classes:
+
+syntax:
+
+  class classname{
+    
+    // variables 
+    // methods
+
+  }
+
+
+user.js:
+
+export default class User {
+
+    login(username, password) {
+
+        if (username == "sai" && password == "sai") {
+            console.log("login success")
+        }
+        else {
+            console.log("login failure");
+        }
+
+    }
+
+}
+
+
+index.js:
+import User from './user';
+
+var user = new User();
+
+user.login("sai", "sai");
+
+
+Promises:
+
+A Promise is a object that takes two arguments - resolve and reject. 
+
+When an operation is successful then resolve function is called and when an operation is 
+unsuccessful then reject function is called. 
+
+
+
+
+
