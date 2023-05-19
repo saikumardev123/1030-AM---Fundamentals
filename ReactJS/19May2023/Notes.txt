@@ -1,0 +1,38 @@
+Environment Set up:
+
+1. Install NodeJS 
+
+https://nodejs.org/en 
+
+2. open cmd and type node -v
+
+3. create a folder in desktop / anywhere 
+
+4. open that folder with VSCode 
+
+5. npx create-react-app firstapp 
+
+6. cd firstapp 
+
+7. npm start
+
+
+
+React:
+
+
+React is a front end javascript library developed by facebook to render the 
+UI components efficiently.
+
+As a library, React focuses only on rendering the UI components on the browser.
+
+How React is faster than other libraries?
+
+Virtual DOM 
+
+
+Features:
+
+1. Virtual DOM 
+2. SPA - Single Page Application. 
+3. 
