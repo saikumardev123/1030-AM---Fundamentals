@@ -1,0 +1,17 @@
+
+Command: npx create-react-app firstapp 
+
+npx?
+
+node package execute is used to install a package directly without installing it 
+globally in a machine.
+
+npm: node package manager manages a package(project / application)
+
+
+
+Problem Statement: 
+
+Create a list of components based on the following requirement. 
+
+User Management and Product Management 
