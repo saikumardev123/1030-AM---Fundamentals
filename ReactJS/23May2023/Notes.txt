@@ -1,0 +1,69 @@
+Component:
+
+A react Component can be a function (recommended) / class that should have logic + ui. 
+
+We decide to create a component when we want to provide some functionality.
+
+ex:  implement a login page -> Login Component 
+
+
+syntax: 
+
+
+  function ComponentName(){
+
+ // logic 
+
+    return(
+         <div>
+                  <!-- html content -->
+         </div>
+    )
+
+  }
+
+React App Structure: 
+
+
+React follows tree structure to form the components.
+
+                  App  (data)
+
+
+         Users           Products 
+
+        
+Previliged    Generic     BabyNeeds     Electronics
+
+
+Component Interaction:   The component Interaction is possible 
+using props.
+
+
+parent to child  :
+
+Refer to Parent to Child application.
+
+child to parent  :
+
+Refer to Child to Parent application.
+
+
+Problem Statement 1 (P to C): 
+App -> make an API call to fakestore api -> products 
+send products from App Component to Products Component.
+Problem Statement 2(C to P): 
+Products -> make an API call to fakestore api -> App Component
+send products from Products Component to App Component.
+
+
+
+
+
+
+
+
+
+
+
+        
