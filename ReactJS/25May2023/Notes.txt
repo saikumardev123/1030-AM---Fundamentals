@@ -1,0 +1,5 @@
+Problem Statement: 
+
+Make an API call in parent component and send the data to the 
+child component.
+
