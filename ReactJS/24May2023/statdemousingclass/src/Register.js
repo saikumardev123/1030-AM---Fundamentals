@@ -1,26 +1,11 @@
 import { useState } from "react";
 
-
 function Register() {
     var [registerFormData, setRegisterForm] = useState({
         username: '',
         password: '',
         email: ''
     })
-    // const usernameUpdate = (event) => {
-    //     var value = event.target.value;
-    //     setRegisterForm({ ...registerFormData, username: value });
-    // }
-    // const passwordUpdate = (event) => {
-
-    //     var value = event.target.value;
-    //     setRegisterForm({ ...registerFormData, password: value });
-    // }
-    // const updateEmail = (event) => {
-    //     var value = event.target.value;
-    //     setRegisterForm({ ...registerFormData, email: value });
-    // }
-
     const updateState = (event) => {
         var value = event.target.value;
         var name = event.target.name;
